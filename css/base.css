@@ -1,13 +1,23 @@
 /* RESET + BASE */
 *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
 html, body { height: 100%; font-family: 'Inter', sans-serif; }
-body { display: flex; min-height: 100vh; background: var(--bg); color: var(--text); flex-direction: row; transition: background 0.3s, color 0.3s; }
+body { display: flex; min-height: 100vh; flex-direction: row; background: var(--bg); color: var(--text); transition: background 0.3s, color 0.3s; }
 a { text-decoration: none; color: inherit; }
 
 /* THEME VARIABLES */
 :root {
-  --bg:#f8f9fb; --text:#1d1d1f; --accent:#0066ff; --card-bg:#fff; --border:#e0e0e0; --shadow:rgba(0,0,0,0.08);
+  --bg: #f5f6fa;
+  --text: #1a1a1a;
+  --accent: #0066ff;
+  --card-bg: #fff;
+  --border: #e0e0e0;
+  --shadow: rgba(0,0,0,0.08);
 }
 [data-theme="dark"] {
-  --bg:#0d0e10; --text:#e7e7e7; --accent:#409cff; --card-bg:#17181a; --border:#2a2a2a; --shadow:rgba(0,0,0,0.6);
+  --bg: #121212;
+  --text: #e7e7e7;
+  --accent: #409cff;
+  --card-bg: #1c1c1c;
+  --border: #2a2a2a;
+  --shadow: rgba(0,0,0,0.6);
 }
